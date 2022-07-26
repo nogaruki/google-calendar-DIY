@@ -410,24 +410,38 @@ Already in stages:
 #### 1. Setting up the workspace
 Before everything we have to setting up our workspace:
 
-__Create a credencial for our project__: To creato one go to your google API project > Credntial > Configure consent Screen > Select 'External' > Create > fill the form > Next > Next > Add test users (You) > Next > Go back to credntial > Create credencials > Select OAUth client ID > type : Web app. > Modify the name if you want > create. And now you have everything you need
+__PHP Quickstart__: I look at the official [Google API](https://developers.google.com/calendar/api/quickstart/php) doc to know the requirement
+What I saw:
 
-- We have to create a longin google form because to link our event or calendar to a google account we have to have their autorisation.
-- The Credential are here to communicate with the API.
+- Need [composer](https://getcomposer.org/)
+- PHP > 5.4
+- A google cloud project with the calendar API active (already done)
 
-__Create the file tree__:
+__Composer__: Composer are a Dependency Manager for PHP (like npm for js)
+
+Now that I have the composer, I'll have to create a dev folder, where I'll put everything I do
+Here is the tree:
+
 ```bash
 Create-event/
-├─ config.php
-├─ index.php
-├─ addEvent.php
-├─ eventSync.php
-├─ GoogleCalendarApi.class.php
 ├─ css/
 │  ├─ style.css
-Create-Calendar/
+├─ index.php
+├─ quickstart.php
 ```
-It will be completed after
+The tree can be change
+The 'quickstart.php' are a template from google.
+
+Now I'll have to install  the Google Client Library (with cmd go to your project folder)
+```bash
+composer require google/apiclient:^2.0
+```
+
+I Copie the quickstart.php from google, The following piece of code allows to understand the connection to a user account and to get its next 10 events.
+I execute it: 
+```bash
+php quickstart.php
+```
 #### 2. Creation of the test file
 Now we will start to dev ! 
 You cna follow my progress in the folder [Create-event](https://github.com/nogaruki/google-calendar-DIY/tree/Create-event)
