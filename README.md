@@ -19,8 +19,8 @@ I am in MASTER MIAGE option MBDS
  - [Google Calendar for Developers](hhttps://developers.google.com/calendar/api)
  - [Stack overflow ](https://stackoverflow.com/questions/tagged/google-calendar-api)
  - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
- - [Readme generator](https://readme.so/editor) 
- 
+ - [Readme.so]//readme.so/editor) 
+ - [Ascii tree generator](https://ascii-tree-generator.com/)
 
 ## ⚠️ WARNING ⚠️
 I am not at all a professional of this platfrom, or even of the API itself.
@@ -395,7 +395,48 @@ The collection of calendars in the user's calendar list.
   }
 }
 ```
+
+## Starting development 👨‍💻
+After everything we learn, we can start some test.
+We will proceed step by step.
+Already in stages:
+
+1. Setting up the workspace 
+2. Creation of the test file in [php v8.1.0](https://www.php.net/releases/8.1/en.php)
+3. Creation of a calendar
+4. Creation of an event
+5. Adding the event to the calendar
+
+#### 1. Setting up the workspace
+Before everything we have to setting up our workspace:
+
+__Create a credencial for our project__: To creato one go to your google API project > Credntial > Configure consent Screen > Select 'External' > Create > fill the form > Next > Next > Add test users (You) > Next > Go back to credntial > Create credencials > Select OAUth client ID > type : Web app. > Modify the name if you want > create. And now you have everything you need
+
+- We have to create a longin google form because to link our event or calendar to a google account we have to have their autorisation.
+- The Credential are here to communicate with the API.
+
+__Create the file tree__:
+```bash
+Create-event/
+├─ config.php
+├─ index.php
+├─ addEvent.php
+├─ eventSync.php
+├─ GoogleCalendarApi.class.php
+├─ css/
+│  ├─ style.css
+Create-Calendar/
+```
+It will be completed after
+#### 2. Creation of the test file
+Now we will start to dev ! 
+You cna follow my progress in the folder [Create-event](https://github.com/nogaruki/google-calendar-DIY/tree/Create-event)
+
+#### 3. Creation of a calendar
+Now that we know how the calendar class is constituted, we will see how to instantiate it:
+
+#### 4. Creation of an event
+
+#### 5. Adding the event to the calendar
+
 ## Screenshots
-
-Not avaible now
-
